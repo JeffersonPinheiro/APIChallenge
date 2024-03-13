@@ -1,20 +1,21 @@
 <template>
   <div class ="container mx-auto max-w-xl px-5 py-10">
     <h1>ToDo List</h1>
-    <!-- Formulário para adicionar um novo item -->
-    <form @submit.prevent="addTask">
-      <input type="text" ref="itemNameInput" placeholder="Nome do novo item">
-      <!-- <input type="text" v-model="newItemName" placeholder="Descrição"> -->
-      <button type="submit">Adicionar</button>
-    </form>  
-    
+    <div class="adicionar">
+      <form @submit.prevent="addTask" class="form">
+        <input type="text" ref="itemNameInput" placeholder="Nome do novo item">
+        <!-- <input type="text" v-model="newItemName" placeholder="Descrição"> -->
+        <button type="submit" class="adicionar-btn">Adicionar</button>
+      </form> 
+    </div>    
     <div>
           <div
               v-for="task in tasks"
               :key="task.id"
+              class="item"
             >
             {{ task.title }}
-            <button @click="deleteTask(task.id)">Deletar</button>
+            <button @click="deleteTask(task.id)" class="delete-btn">Deletar</button>
           </div>    
     </div>
     <pre>{{ tasks }}</pre>
@@ -70,6 +71,64 @@ export default {
 
 </script>
 
-<style>
+<style scoped>
+/* Estilo global */
+body, h1, h2, h3, h4, h5, h6, p, ul, li, button {
+  font-family: Verdana, sans-serif;
+}
 
+.adicionar{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.form{
+  display: flex;
+    justify-content: space-between;
+    width: -webkit-fill-available;
+}
+
+.item-list {
+  list-style: none;
+  padding: 0;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.item span {
+  flex-grow: 1;
+}
+
+.adicionar-btn {
+  margin-left: 10px;
+  background-color: #87cefa;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.delete-btn {
+  margin-left: 10px;
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
 </style>
