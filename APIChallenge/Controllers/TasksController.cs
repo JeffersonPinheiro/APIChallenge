@@ -2,10 +2,12 @@ using System;
 using Microsoft.AspNetCore.Mvc;
 using APIChallenge.Services;
 using APIChallenge.Models;
+using Microsoft.AspNetCore.Cors;
 
 namespace APIChallenge.Controllers;
 [Controller]
 [Route("api/[controller]")]
+[EnableCors("AllowSpecificOrigins")] 
 public class TasksController: Controller {
 
     private readonly MongoDBService _mongoDBService;
