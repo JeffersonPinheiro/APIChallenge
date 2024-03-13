@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("APIChallenge")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+103944edaa32b4b1b34300903431b7ee046f0e46")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8510e38a303d731745f2ea613cbab2aedc069886")]
 [assembly: System.Reflection.AssemblyProductAttribute("APIChallenge")]
 [assembly: System.Reflection.AssemblyTitleAttribute("APIChallenge")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
