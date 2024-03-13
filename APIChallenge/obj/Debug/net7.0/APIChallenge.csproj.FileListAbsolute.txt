@@ -44,3 +44,4 @@ C:\Users\Jefferson Pinheiro\source\repos\APIChallenge\APIChallenge\obj\Debug\net
 C:\Users\Jefferson Pinheiro\source\repos\APIChallenge\APIChallenge\obj\Debug\net7.0\APIChallenge.pdb
 C:\Users\Jefferson Pinheiro\source\repos\APIChallenge\APIChallenge\obj\Debug\net7.0\APIChallenge.genruntimeconfig.cache
 C:\Users\Jefferson Pinheiro\source\repos\APIChallenge\APIChallenge\obj\Debug\net7.0\ref\APIChallenge.dll
+C:\Users\Jefferson Pinheiro\source\repos\APIChallenge\APIChallenge\obj\Debug\net7.0\APIChallenge.sourcelink.json

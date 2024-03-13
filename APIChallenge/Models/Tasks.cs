@@ -10,9 +10,11 @@ public class Tasks {
     [BsonRepresentation(BsonType.ObjectId)]
     public string? Id { get; set; }
 
-    public string? name {get; set;}
+    public string? title {get; set;}
 
     public string?  description { get; set; }
 
-    public string?  priority { get; set; }
+    public DateTime?  creation { get; set; }
+
+    public string? status { get; set; }
 }
