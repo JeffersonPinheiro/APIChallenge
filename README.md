@@ -14,4 +14,44 @@ Esta API permite realizar operações CRUD (Criar, Ler, Atualizar, Deletar) em t
 - Atualizar uma tarefa existente
 - Deletar uma tarefa existente
 
+## Rotas
 
+### Listar todas as tarefas
+
+GET /api/Tasks
+
+### Obter uma tarefa pelo ID
+
+GET /api/Tasks/id
+
+### Criar uma nova tarefa
+
+POST /api/Tasks
+
+#### Corpo da requisição
+
+```json
+{
+  "title": "Estudar",
+  "description": "Estudar o framework Vue.js",
+  "creation": "2024-03-13T16:18:48.067Z",
+  "status": "Em andamento"
+}
+
+### Atualizar uma tarefa existente
+
+PUT /api/Tasks/id
+
+#### Corpo da requisição
+
+```json
+{
+  "title": "Estudar",
+  "description": "Estudar o framework Vue.js",
+  "creation": "2024-03-13T16:18:48.067Z",
+  "status": "concluída"
+}
+
+### Deletar uma tarefa existente
+
+DELETE /api/Tasks/id
