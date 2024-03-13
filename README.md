@@ -37,7 +37,7 @@ POST /api/Tasks
   "creation": "2024-03-13T16:18:48.067Z",
   "status": "Em andamento"
 }
-
+```json
 ### Atualizar uma tarefa existente
 
 PUT /api/Tasks/id
@@ -51,7 +51,9 @@ PUT /api/Tasks/id
   "creation": "2024-03-13T16:18:48.067Z",
   "status": "concluída"
 }
+```json
 
 ### Deletar uma tarefa existente
 
 DELETE /api/Tasks/id
+
